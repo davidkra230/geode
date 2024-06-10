@@ -67,7 +67,7 @@ namespace geode {
         bool isForwardCompatMode();
 
         void provideNextMod(Mod* mod);
-        Mod* takeNextMod();
+        Mod* receiveNextMod();
         void releaseNextMod();
 
         std::unordered_map<void*, tulip::hook::HandlerHandle> m_handlerHandles;

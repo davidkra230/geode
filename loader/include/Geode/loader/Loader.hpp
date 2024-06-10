@@ -59,7 +59,7 @@ namespace geode {
         ~Loader();
 
     protected:
-        Mod* takeNextMod();
+        Mod* receiveNextMod();
 
     public:
         static Loader* get();
@@ -168,6 +168,6 @@ namespace geode {
      * @return Mod* The next mod to load
     */
     inline GEODE_HIDDEN Mod* takeNextLoaderMod() {
-        return Loader::get()->takeNextMod();
+        return Loader::get()->receiveNextMod();
     }
 }

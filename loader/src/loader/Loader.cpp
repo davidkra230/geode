@@ -101,8 +101,8 @@ std::string Loader::getGameVersion() {
     return m_impl->getGameVersion();
 }
 
-Mod* Loader::takeNextMod() {
-    return m_impl->takeNextMod();
+Mod* Loader::receiveNextMod() {
+    return m_impl->receiveNextMod();
 }
 
 std::vector<std::string> Loader::getLaunchArgumentNames() const {

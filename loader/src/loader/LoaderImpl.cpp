@@ -832,7 +832,7 @@ void Loader::Impl::provideNextMod(Mod* mod) {
     }
 }
 
-Mod* Loader::Impl::takeNextMod() {
+Mod* Loader::Impl::receiveNextMod() {
     if (!m_nextMod)
         m_nextMod = this->getInternalMod();
     return m_nextMod;
